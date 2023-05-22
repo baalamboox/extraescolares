@@ -17,3 +17,4 @@ const table = new DataTable(document.querySelector('#tabla'), {
 
 // Nuestros modulos que se vayan generando.
 import './signin';
+import './signup';

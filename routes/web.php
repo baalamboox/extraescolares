@@ -17,3 +17,5 @@ Route::get('/', function () {
     return view('layouts.app');
 });
 Route::view('/signin','auth.signin');
+
+Route::view('/signup', 'auth.signup');
