@@ -2,15 +2,15 @@
 @section('title', 'Inicio Sesion')
 
 @section('body')
-    <div class="container vh-100 d-flex align-items-center">
-        <div class="row w-100 mx-auto justify-content-center">
+    <div class="container my-5">
+        <div class="row  justify-content-center">
             <div class="col-md-5">
                 <div class="card shadow">
                     <div class="card-body">
                         <form action="" method="post">
                             @csrf
                             <div class="profile-container text-center pb-3">
-                                <img src="https://images.pexels.com/photos/2023384/pexels-photo-2023384.jpeg?auto=compress&cs=tinysrgb&w=600" alt="profile" class=" profile rounded-circle shadow" >
+                                <img src="https://static.vecteezy.com/system/resources/previews/009/734/564/original/default-avatar-profile-icon-of-social-media-user-vector.jpg" alt="profile" class=" profile rounded-circle shadow" >
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control rounded-pill" id="complete_name" name="complete_name" placeholder="Nombre Completo">
@@ -41,7 +41,7 @@
                                 <input class="form-check-input" type="checkbox" role="switch" id="show_hide_password" checked>
                                 <label class="form-check-label" for="show_hide_password" id="text_show_hide_password">Mostrar contraseña</label>
                             </div>
-                            <button type="submit" class="btn btn-success  rounded-pill w-100">Ingresar</button>
+                            <button type="submit" class="btn btn-success  rounded-pill w-100"><i class="fa-solid fa-right-to-bracket"></i> Ingresar</button>
                         </form>
                     </div>
                 </div>
