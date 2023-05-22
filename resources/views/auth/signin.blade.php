@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                             <div class="form-check form-switch mb-5 mx-2">
-                                <input class="form-check-input" type="checkbox" role="switch" id="show_hide_password" checked>
+                                <input class="form-check-input" type="checkbox" role="switch" id="show_hide_password">
                                 <label class="form-check-label" for="show_hide_password" id="text_show_hide_password">Mostrar contraseña</label>
                             </div>
                             <button type="submit" class="btn btn-success  rounded-pill w-100"><i class="fa-solid fa-right-to-bracket"></i> Ingresar</button>
