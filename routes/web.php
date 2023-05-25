@@ -14,8 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layouts.app');
+    return view('home');
 });
-Route::view('/signin','auth.signin');
-
-Route::view('/signup', 'auth.signup');
