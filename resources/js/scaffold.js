@@ -10,16 +10,22 @@ const open_aside = () => {
 }
 
 const close_aside = () => {
-    aside.classList.add('animate__animated');
-    aside.classList.add('animate__zoomOutLeft');
-    main.classList.remove('position-absolute');
-    main.classList.add('animate__animated');
-    main.classList.add('animate__fadeInRightBig');
-    btn_open_aside.classList.remove('d-none');
-    btn_open_aside.classList.remove('position-absolute');
-    btn_open_aside.classList.add('position-fixed');
-    main.style.marginLeft = 0;
-    
+    aside.classList.contains('animate__zoomInLeft') ? [
+        aside.classList.replace('animate__zoomInLeft', 'animate__zoomOutLeft'),
+        btn_open_aside.classList.remove('d-none'),
+        main.classList.remove('position-absolute'),
+        setTimeout(() => main.style.marginLeft = 0, 500),
+    ] : [
+        aside.classList.add('animate__animated'),
+        aside.classList.add('animate__zoomOutLeft'),
+        main.classList.remove('position-absolute'),
+        main.classList.add('animate__animated'),
+        main.classList.add('animate__fadeInRightBig'),
+        btn_open_aside.classList.remove('d-none'),
+        btn_open_aside.classList.remove('position-absolute'),
+        btn_open_aside.classList.add('position-fixed'),
+        main.style.marginLeft = 0,
+    ];
 }
 
 btn_open_aside.addEventListener('click', open_aside);
