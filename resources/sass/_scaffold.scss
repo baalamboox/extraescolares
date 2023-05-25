@@ -14,4 +14,15 @@
 }
 .main {
     margin-left: 250px;
+    background-color: #424242;
 }
+@media screen and (max-width: 576px) {
+    .aside {
+      display: none !important;
+    }
+    .main{
+        
+        margin-left: 0;
+    }
+}
+  
