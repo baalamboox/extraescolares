@@ -1,0 +1,21 @@
+body {
+    background-color: #424242;
+}
+.btn-open-aside {
+    width: 40px;
+    height: 40px;
+    background-color: #dddddd;
+    z-index: 1;
+}
+.btn-close-aside {
+    width: 25px;
+    height: 25px;
+}
+.aside {
+    width: 250px;
+    background-color: #dddddd;
+}
+.main {
+    margin-left: 250px;
+    background-color: #424242;
+}
