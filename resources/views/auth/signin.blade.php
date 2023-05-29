@@ -10,7 +10,7 @@
                         <form action="" method="post">
                             @csrf
                             <div class="profile-container text-center pb-3">
-                                <img src="https://static.vecteezy.com/system/resources/previews/009/734/564/original/default-avatar-profile-icon-of-social-media-user-vector.jpg" alt="profile" class=" profile rounded-circle shadow" >
+                                <img src="{{asset('imagenes-perfil/control-number181190086/181190086.jpg')}}" alt="profile" class=" profile rounded-circle shadow" >
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control rounded-pill" id="complete_name" name="complete_name" placeholder="Nombre Completo">

@@ -7,6 +7,35 @@ const career = document.querySelector('#career');
 const temp_career = document.querySelector('#temp_career');
 const photo_profile = document.querySelector('#photo_profile');
 
+document.addEventListener('DOMContentLoaded', function(){
+    const names =  document.querySelector('#career');
+    const error_names = document.querySelector('#error_career');
+
+    names.addEventListener('input', ()=>{
+        if(names.value === ''){
+            names.classList.add('is-invalid');
+            error_names?.removeAttribute('hidden');
+        }else{
+            names.classList.remove('is-invalid');
+            names.classList.add('is-valid');
+            error_names?.setAttribute('hidden', 'false');
+        }
+    })
+    const inputs = document.querySelectorAll('input');
+
+    inputs.forEach(function(input) {
+        input.addEventListener('input', function(){
+            if(input.value.trim() === ''){
+                input.classList.add('is-invalid');
+                input.nextElementSibling.style.display = 'block';
+            }else{
+                input.classList.remove('is-invalid');
+                input.nextElementSibling.style.display = 'none';
+                input.classList.add('is-valid');
+            }  
+        })
+    })
+})
 const show_hide = () => {
     show_hide_password.checked ? [
         password.type = 'text',

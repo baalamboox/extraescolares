@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,7 @@ Route::get('/', function () {
 Route::view('/signin','auth.signin');
 
 Route::view('/signup', 'auth.signup');
+
+Route::controller(AuthController::class)->group(function() {
+   Route::post('/register', 'create')->name('auth.register');
+});
