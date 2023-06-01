@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::prefix('student')->group(function () {
+    Route::view('sport-credit', 'student.sport_credit');
+});
